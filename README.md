@@ -1,5 +1,41 @@
 # CS1958 程序设计与数据结构Ⅰ Lab3
 
+## 12.17新增：
+**更新内容**:
+1. 最终评分所使用的测试脚本
+2. 由于评分脚本提供时间较晚，截止时间修改为12.19 23：59。
+3. 第16周也可以答辩，但会按照迟交惩罚规则进行相应扣分(扣分数量取决于你选择的commit时间比ddl迟的天数)。
+
+**请保证你的电脑中安装了valgrind**
+
+评分脚本使用方法：
+1. 下载grade.sh到相应目录下(与vector.hpp在同一目录下)
+2. 在你的工作目录下(例如，我的工作目录是~/cpp/CS1958-Lab3)，执行`chmod 777 ./grade.sh`
+3. 在你的工作目录下执行`./grade.sh`，如果结果如下，恭喜通过测试！(注：第一行为所执行的命令)
+
+**注：若出现类似"7c7"的输出，表示你的输出第7行与`answer.txt`不一致；若未输出`0 leak 0 error`，表示你的内存泄露检测未通过。**
+```shell
+qqqqxxx@DESKTOP-M6D01OA:~/cpp/CS1958-Lab3$ ./grade.sh
+-------------------------Test One--------------------------
+Testing for one... May take long...
+Success test one!
+Memory testing for one... May take long...
+0 leaks
+0 errors
+-------------------------Test Two--------------------------
+Testing for two... May take long...
+Success test two!
+Memory testing for two... May take long...
+0 leaks
+0 errors
+------------------------Test Three-------------------------
+Testing for three... May take long...
+Success test three!
+Memory testing for three... May take long...
+0 leaks
+0 errors
+```
+
 ## 内容概要
 
 本学期的第三项大作业要求同学们完成vector类的编写，其特性类似于stl中的vector。
